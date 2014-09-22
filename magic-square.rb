@@ -31,7 +31,7 @@ end
 def next_pos
 	x = @pos[0]
 	y = @pos[1]
-	
+
 	if is_zero(x+1, y-1)
 		@pos = [x+1, y-1]
 	elsif x == @size && is_zero(1, y-1)
@@ -71,17 +71,17 @@ end
 #================ Running the program ===============
 
 if $0 == __FILE__
-	if ARGV.length > 0 && (ARGV[0].to_i % 2 > 0)
+	if ARGV.length > 0 && (ARGV[0].to_i % 2 == 1)
 		define_matrix(ARGV[0].to_i)
 		start_pos
-	
+
 		for k in 1..@max
 			input(@pos[0], @pos[1], k)
 			unless k == @max
 				next_pos
 			end
 		end
-	
+
 		output
 	else
 		puts "Call with an odd number!"
