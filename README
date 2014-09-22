@@ -1,0 +1,10 @@
+This is a small program that produces magic squares.
+
+Call the file with an odd number like:
+ruby magic-square.rb 3
+
+Example output could be:
+
+8 1 6
+3 5 7
+4 9 2
