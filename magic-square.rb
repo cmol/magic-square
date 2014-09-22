@@ -2,19 +2,9 @@
 
 # Makes a multidimension array (matrix) with the width and height of n
 def define_matrix(n)
-	@square = Array.new(n) { Array.new(n) }
-	fill_matrix_with_zeroes(n)
+	@square = Array.new(n) { Array.new(n).fill(0) }
 	@size = n
 	@max = @size * @size
-end
-
-# Fills the matrix with zeroes
-def fill_matrix_with_zeroes(n)
-	n.times do | i |
-		n.times do | j |
-			@square[i][j] = 0
-		end
-	end
 end
 
 # Writes to the matrix
