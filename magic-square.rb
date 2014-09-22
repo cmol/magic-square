@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 # Makes a multidimension array (matrix) with the width and height of n
 def define_matrix(n)
