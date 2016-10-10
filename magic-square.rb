@@ -17,14 +17,7 @@ end
 
 # Tests if the place in the matrix is free
 def is_zero(x, y)
-#	puts "Is #{x}, #{y} zero?"
-	if @square[y-1][x-1] == 0 && y > 0 && x > 0
-		#puts "Yes :)"
-		return true
-	else
-		#puts "No! :("
-		return false
-	end
+	@square[y-1][x-1] == 0 && y > 0 && x > 0
 end
 
 # Finds the next place to write
